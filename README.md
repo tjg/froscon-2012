@@ -329,16 +329,22 @@ the totally wrong tradeoff for your project.
 Perhaps the most common example is having objects backed by a
 database. I did this in Python once, with MongoDB.
 
-A more exotic example came from Boeing, which used the metaobject
-protocol to design planes. You could quickly change sizes and weights;
-and only when you accessed a member, did the system lazily run the
-calculations relevant to it.
+A more exotic example came from Boeing, which has used classes and
+instances to design
+planes. [Veitch, _Handbook of Programming languages Vol. 4_] Some
+parts you could model as normal object variables, like the length of
+the passenger compartment. But other parts need to be calcuated from
+them, like seating capacity. It's like a large spreadsheet, where some
+cells depend on others.
 
+Instead of eagerly recalculating all the time, you can use the
+metaobject protocol to calculate parts lazily, only as you request
+them.
 
 
 ## Let your tools operate on themselves. 
 
-Example taken from:
+There's many forms of introspection. Here's an example taken from:
 http://www.gigamonkeys.com/book/conclusion-whats-next.html
 
 ```lisp
