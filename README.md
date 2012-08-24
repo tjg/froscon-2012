@@ -354,33 +354,33 @@ CL-USER> (disassemble 'add)
 ;; formals: X Y
 
 ;; code start: #x737496f4:
-   0: 55         pushl	ebp
-   1: 8b ec    movl	ebp,esp
-   3: 56         pushl	esi
-   4: 83 ec 24 subl	esp,$36
-   7: 83 f9 02 cmpl	ecx,$2
-  10: 74 02    jz	14
-  12: cd 61    int	$97   ; SYS::TRAP-ARGERR
-  14: 80 7f cb 00 cmpb	[edi-53],$0        ; SYS::C_INTERRUPT-PENDING
-  18: 74 02    jz	22
-  20: cd 64    int	$100  ; SYS::TRAP-SIGNAL-HIT
-  22: 8b d8    movl	ebx,eax
-  24: 0b da    orl	ebx,edx
-  26: f6 c3 03 testb	bl,$3
-  29: 75 0e    jnz	45
-  31: 8b d8    movl	ebx,eax
-  33: 03 da    addl	ebx,edx
-  35: 70 08    jo	45
-  37: 8b c3    movl	eax,ebx
-  39: f8         clc
-  40: c9         leave
-  41: 8b 75 fc movl	esi,[ebp-4]
-  44: c3         ret
-  45: 8b 5f 8f movl	ebx,[edi-113]    ; EXCL::+_2OP
-  48: ff 57 27 call	*[edi+39]   ; SYS::TRAMP-TWO
+   0: 55       pushl ebp
+   1: 8b ec    movl ebp,esp
+   3: 56       pushl esi
+   4: 83 ec 24 subl esp,$36
+   7: 83 f9 02 cmpl ecx,$2
+  10: 74 02    jz 14
+  12: cd 61    int $97              ; SYS::TRAP-ARGERR
+  14: 80 7f cb 00 cmpb	[edi-53],$0 ; SYS::C_INTERRUPT-PENDING
+  18: 74 02    jz 22
+  20: cd 64    int $100             ; SYS::TRAP-SIGNAL-HIT
+  22: 8b d8    movl ebx,eax
+  24: 0b da    orl ebx,edx
+  26: f6 c3 03 testb bl,$3
+  29: 75 0e    jnz 45
+  31: 8b d8    movl ebx,eax
+  33: 03 da    addl ebx,edx
+  35: 70 08    jo 45
+  37: 8b c3    movl eax,ebx
+  39: f8       clc
+  40: c9       leave
+  41: 8b 75 fc movl esi,[ebp-4]
+  44: c3       ret
+  45: 8b 5f 8f movl ebx,[edi-113]   ; EXCL::+_2OP
+  48: ff 57 27 call *[edi+39]       ; SYS::TRAMP-TWO
   51: eb f3    jmp	40
-  53: 90         nop
-; No value
+  53: 90       nop
+                                    ; No value
 ```
 
 Now add optimizations to the "add" function, and see what it compiles
@@ -397,11 +397,11 @@ CL-USER> (disassemble 'add)
 ;; formals: X Y
 
 ;; code start: #x7374dc34:
-   0: 03 c2    addl	eax,edx
-   2: f8         clc
-   3: 8b 75 fc movl	esi,[ebp-4]
-   6: c3         ret
-   7: 90         nop
+   0: 03 c2    addl eax,edx
+   2: f8       clc
+   3: 8b 75 fc movl esi,[ebp-4]
+   6: c3       ret
+   7: 90       nop
 ; No value
 ```
 
