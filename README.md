@@ -161,23 +161,22 @@ test the program, you ran it. And waited.
 The codebase's first programmer once told me that he built job
 security by intentionally writing spaghetti.
 
-This wrecks your design->edit->debug cycles. When you just want to run
-a tiny bit of code, it's unnecessary to have to pull in the whole rest
-of the program. Much nicer to write layers of small code: with things
-broken down into abstractions, which you compose like virtual Lego.
+All this wrecks your design->edit->debug cycles. When you just want to
+run a tiny bit of code, it's unnecessary to have to pull in the whole
+rest of the program. Much nicer to write layers of small code: with
+things broken down into abstractions, which you compose like virtual
+Lego.
 
-In any case, the modules I wrote were standalone, and designed to run
-alongside an interactive REPL. A single keystroke evaluated the
-sourcecode I worked on, so I could grow my systems incrementally.
-
-(Note that SQL and Unix have REPLs too — they're just called
-interactive prompts. They allow you to interact with a live, growing
-system. Rather than stopping and restarting it each time.)
-
-For example, with a single function call, I pushed data safely into
-MongoDB. Or queried it at runtime. With all the power of Python.
+My solution was to write standalone modules, designed to run alongside
+an interactive REPL. A single keystroke executed the sourcecode I
+worked on, so I could grow my systems incrementally.
 
 I believe this led to notably simpler, more composable code.
+
+(Note that SQL and Unix have REPLs too — "interactive prompts". They
+allow you to interact with a live, growing system. Rather than
+stopping and restarting it each time.)
+
 
 ### Explore 3rd parties
 
