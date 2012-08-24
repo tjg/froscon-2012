@@ -179,6 +179,41 @@ MongoDB. Or queried it at runtime. With all the power of Python.
 
 I believe this led to notably simpler, more composable code.
 
+### Explore 3rd parties
+
+Recently, I wanted to get closely acquainted with Amazon's EC2 API for
+Java. With a dynamic language and my favorite IDE (in my case, Clojure
+and Emacs), I was able to quickly explore and visualize the API. Here
+is how my IDE's "inspector" printed out a Java object:
+
+```
+{InstanceId: ...}
+--------------------
+Type: class com.amazonaws.services.ec2.model.Instance
+Value: {InstanceId: ...}
+---
+Fields: 
+  instanceId:            i-nnnnnnnn
+  imageId:               ami-nnnnnnnn
+  state:                 {Code: 16, Name: running, }
+  privateDnsName:        ip-nn-nnn-nn-nnn.eu-west-1.compute.internal
+  publicDnsName:         ec2-nn-nnn-nn-nn.eu-west-1.compute.amazonaws.com
+  stateTransitionReason: 
+  keyName:               t.adcloud.net
+  amiLaunchIndex:        0
+  productCodes:          []
+  instanceType:          m1.large
+  launchTime:            Mon Nov 2 20:00:00 CET 2011
+  placement:             {AvailabilityZone: eu-west-1a, GroupName: , Tenancy: default, }
+  kernelId:              aki-nnnnnnnn
+  ramdiskId:             
+  platform:              
+  monitoring:            {State: disabled, }
+  ...
+```
+
+
+
 
 ## Be deadly with one scripting language, and one editor/IDE. 
 
@@ -187,7 +222,7 @@ directly about coding. Such as getting data from Riak and stuffing it
 into MySQL, munging text, generating bits of code (like print
 statements), etc.
 
-Many people do tedious things like:
+Many people follow tedious steps like:
 
 1. Run curl to get data out of Riak.
 2. Pipe it into a file.
