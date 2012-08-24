@@ -212,8 +212,6 @@ Fields:
 ```
 
 
-
-
 ## Be deadly with one scripting language, and one editor/IDE. 
 
 Commonly, you need to deal with all sorts of "meta" stuff, which isn't
@@ -260,7 +258,8 @@ languages to express our thoughts in.
 
 ## Work on simplicity. 
 
-There's an interesting movement coming from the Clojure world.
+There's an interesting movement towards simplicity in the Clojure
+world.
 
 "Simplicity Matters" keynote:
 http://www.confreaks.com/videos/860-railsconf2012-keynote-simplicity-matters
