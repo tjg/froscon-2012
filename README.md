@@ -50,16 +50,16 @@ textEnabledSpec = {
   Rl: { Aa: ' ',     Av: ' ',     Al: 'video', An: 'video'},
   Rn: { Aa: ' ',     Av: ' ',     Al: ' ',     An: 'video'},
 };
+
+// Elided about 30 significant lines of lower-level "plumbing" code,
+// which executes both datastructures.
 ```
 
-... along with about 20 lines of lower-level "plumbing" code, which
-executed both datastructures.
+This is simple to extend. And if we no longer need one of them, it's
+trivial to delete. Spec bugs are simpler to fix.
 
-This is simple to simple to extend to new behaviors. And if we no
-longer need one of them, it's trivial to delete. Bugfixing is simple.
-
-It can even be used to automatically generate test-cases. It could've
-also come from the network, as JSON.
+You can also use it to automatically generate test-cases. And it
+could've easily come from the network, as JSON.
 
 This technique wasn't new to me. Once upon a time, I wrote rich-client
 GUIs using LispWorks, which has a wonderful GUI language like this.
@@ -67,9 +67,9 @@ GUIs using LispWorks, which has a wonderful GUI language like this.
 
 ### A political note
 
-Unfortunately, such simple techniques may result in "fear, uncertainty
-and doubt". They appear unusual to others; and easily enter the realm
-of politics. You may experience resistance.
+Unfortunately, such simple techniques may result in *"fear,
+uncertainty and doubt"*. They appear unusual to others; and easily
+enter the realm of politics. You may experience resistance.
 
 To understand this, note that institutions evolve ways to defend
 themselves from dangerous technological choices; otherwise they'll
@@ -141,14 +141,15 @@ putting in the proper values.
 documentation browser.)
 
 
-### Remarks
+### Concluding thoughts
 
 Were these examples of data, or code? In the Lisp perspective, the
-line between the two is blurred. Data is powerful. You can interpret
-in different ways. (As code, tests, etc.) If you express a language in
-it, as in our examples above, you can operate on code using your
-powerful data-handling muscles. You can store it somewhere, or pull it
-from the network. Many possibilities for the enterprising mercenary.
+line between the two is blurred — if there is a real line. Data is
+powerful. You can interpret in different ways. (As code, tests, etc.)
+If you express a language in it, as in our examples above, you can
+operate on code using your powerful data-handling muscles. You can
+store it somewhere, or pull it from the network. Many possibilities
+for the enterprising mercenary.
 
 
 ## Sculpt your program while it runs: incremental development. 
@@ -187,11 +188,11 @@ into MySQL, munging text, generating bits of code (like print
 statements), etc.
 
 Many people do tedious things like:
-- Run curl to get data out of Riak.
-- Pipe it into a file.
-- Open it with Chrome, for readable JSON.
-- Copy bits of it into their clipboard.
-- Paste it into MySQLAdmin.
+1. Run curl to get data out of Riak.
+2. Pipe it into a file.
+3. Open it with Chrome, for readable JSON.
+4. Copy bits of it into their clipboard.
+5. Paste it into MySQLAdmin.
 
 But why not rely on the power of a general-purpose programming
 language? One designed to handle data powerfully and interactively?
