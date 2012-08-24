@@ -1,9 +1,8 @@
 # Ideas for the clever mercenary who’ll never learn Lisp
 
-This talk is dedicated to those who bring guns to knife fights.
+*This talk is dedicated to those who bring guns to knife fights.*
 
-And tactical explosives. And smoke bombs. And third parties who think
-your enemies are their enemies.
+*And tactical explosives. And smoke bombs. And third parties who think your enemies are their enemies.*
 
 
 ## Note
@@ -314,7 +313,6 @@ CL-USER> (disassemble 'add)
 ;; formals: X Y
 
 ;; code start: #x737496f4:
-```asm
    0: 55         pushl	ebp
    1: 8b ec    movl	ebp,esp
    3: 56         pushl	esi
