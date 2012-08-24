@@ -198,7 +198,7 @@ Fields:
   privateDnsName:        ip-nn-nnn-nn-nnn.eu-west-1.compute.internal
   publicDnsName:         ec2-nn-nnn-nn-nn.eu-west-1.compute.amazonaws.com
   stateTransitionReason: 
-  keyName:               t.adcloud.net
+  keyName:               Staging server
   amiLaunchIndex:        0
   productCodes:          []
   instanceType:          m1.large
