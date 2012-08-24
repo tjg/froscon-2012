@@ -188,6 +188,7 @@ into MySQL, munging text, generating bits of code (like print
 statements), etc.
 
 Many people do tedious things like:
+
 1. Run curl to get data out of Riak.
 2. Pipe it into a file.
 3. Open it with Chrome, for readable JSON.
