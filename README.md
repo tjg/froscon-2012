@@ -181,9 +181,9 @@ stopping and restarting it each time.)
 ### Explore 3rd parties
 
 Recently, I wanted to get closely acquainted with Amazon's EC2 API for
-Java. With a dynamic language and my favorite IDE (in my case, Clojure
-and Emacs), I was able to quickly explore and visualize the API. Here
-is how my IDE's "inspector" printed out a Java object:
+Java. With a dynamic language and my favorite IDE (Clojure and Emacs),
+I was able to quickly explore and visualize the API. Here is how my
+IDE's "inspector" printed out a Java object:
 
 ```
 {InstanceId: ...}
@@ -233,13 +233,10 @@ language? One designed to handle data powerfully and interactively?
 (Maybe the first time it takes longer, but next time you've got a
 reusable snippet of code which you can take anywhere.)
 
-Python and Ruby are pretty good. And scale faster than cutting 'n
-pasting. During an emergency, I needed to transform gigabytes of data
-from a MySQL database. So I just loaded it into an Amazon cloud image,
-cloned it 20 times, and reimplemented a poor man's MapReduce in Python
-over it all.
-
-I would need more than 20 human volunteers to do this.
+Which scales? During an emergency, I needed to transform gigabytes of
+data from a MySQL database. So I just loaded it into an Amazon cloud
+image, cloned it 20 times, and reimplemented a poor man's MapReduce in
+Python over it all.
 
 
 ## Build a strong domain language (without heavy DSLs or macros). 
@@ -264,25 +261,24 @@ world.
 "Simplicity Matters" keynote:
 http://www.confreaks.com/videos/860-railsconf2012-keynote-simplicity-matters
 
-Rich Hickey (Clojure's creator) advocates simplicity. For your
-convenience, he coined the term "complected". At work, you can say,
-"This code is complected", meaning that there are multiple concepts
-intertwined.
+For your convenience, Clojure's creator coined the term
+"complected". At work, you can complain, "This code is complected",
+meaning that there are multiple concepts intertwined.
 
-Why? You've probably had the experience of enormous productivity when
-you start a project. Then some mysterious force slows your team down,
-eventually grinding productivity to a near-halt, regardless how
-"Agile" your process is.
+Why does it matter? You've probably had the experience of enormous
+productivity when you start a project. Then some mysterious force
+slows your team down, eventually grinding productivity to a near-halt,
+regardless how "Agile" your process is.
 
-Your project may have fallen victim to a force of software
-architecture, where your program is unable to grow. Like buildings
-which fell under their own weight before innovations like arches.
+It may have fallen victim to a force of software architecture, where
+your program is unable to grow. Like buildings which fell under their
+own weight, before innovations like arches.
 
-Illustrated by the rather extreme legacy Python spaghetti code we
-discussed earlier, where to understand one part, you're forced to
-understand many other parts.
+Like the rather extreme legacy Python spaghetti code we discussed
+earlier, where to understand one part, you're forced to understand
+many other parts.
 
-Clojure can be evaluated as a case-study of how pursuing simplicity is
+Clojure can be evaluated as a case-study on how pursuing simplicity is
 integral to good, truly agile design.
 
 
@@ -300,9 +296,9 @@ connect to the server and live-patch themselves.
 My understanding is that many Smalltalk programs live as images, not
 textual sourcecode.
 
-Since I haven't used this personally, I can't knowledgeably evaluate
-this practice. Except for virtual machines like VMWare, which I use
-all the time.
+(That said, I haven't used this personally, so can't knowledgeably
+evaluate this practice. Aside from virtual machines like VMWare, which
+I use all the time.)
 
 
 ## Empower your users with some of your power.
