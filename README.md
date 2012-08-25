@@ -29,7 +29,7 @@ him to fill it in. He improved it, and so it looked something like:
 
 And under different conditions:
 
-![Text-enabled spec](https://raw.github.com/tjg/froscon-2012/blob/master/spec-text-enabled.jpg)
+![Text-enabled spec](https://raw.github.com/tjg/froscon-2012/master/spec-text-enabled.jpg)
 
 At first, I coded it in the usual, rather ugly way. Then I slapped my
 forehead. Why not translate the picture from paper to the screen?
