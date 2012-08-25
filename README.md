@@ -25,9 +25,11 @@ basic set theory to describe it. But the spec still turned out buggy.
 The next time, I started writing down a simple visual matrix and asked
 him to fill it in. He improved it, and so it looked something like:
 
+![Normal spec](https://github.com/tjg/froscon-2012/blob/master/spec-normal.jpg)
 
 And under different conditions:
 
+![Text-enabled spec](https://github.com/tjg/froscon-2012/blob/master/spec-text-enabled.jpg)
 
 At first, I coded it in the usual, rather ugly way. Then I slapped my
 forehead. Why not translate the picture from paper to the screen?
