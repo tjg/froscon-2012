@@ -5,7 +5,8 @@
 *And tactical explosives. And smoke bombs. And third parties who think your enemies are their enemies.*
 
 > *“Of course there are ways you could have won... There always are, in every lost battle. The world around us redounds with opportunities, explodes with opportunities, which nearly all folk ignore because it would require them to violate a habit of thought...”*
-> — LessWrong
+>
+> — [LessWrong](http://hpmor.com/)
 
 ## Note
 
